@@ -100,3 +100,51 @@ nav {
   letter-spacing: 5px;
   color: #3d535f;
 }
+.title::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 3px;
+  bottom: 10px;
+  background-color: #c62a7b;
+}
+
+h1 {
+  display: block;
+  font-size: 7em;
+  font-weight: 700;
+  color: #3d535f;
+}
+
+.multitext {
+  color: #c62a7b;
+  text-transform: capitalize;
+}
+
+p {
+  display: block;
+
+  width: 90%;
+  font-size: 1.2em;
+  color: #3d535f;
+}
+
+.btns {
+  width: 100%;
+  position: relative;
+  left: 150px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+  background-color: #c62a7b;
+  padding: 8px 4px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
