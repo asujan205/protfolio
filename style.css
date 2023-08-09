@@ -21,8 +21,9 @@ body {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  max-width: 100%;
   height: 10vh;
   z-index: 111;
 
@@ -82,15 +83,34 @@ nav {
 }
 .wrapper {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 80px);
   padding: 0 7.7%;
   overflow: hidden;
+  margin-top: 7%;
+}
+.wrapper::before {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background-color: liner-gradient(45deg, #7f00ff, #c62a7b);
+  animation: object1 10s linear infinite;
 }
 
-.cols {
+@keyframes object1 {
+  50% {
+    left: 80%;
+    top: 10%;
+  }
+}
+.cols .cols0 {
   width: 50%;
 }
 .title {
@@ -147,4 +167,29 @@ button {
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background-color: #4a144b;
+}
+
+.imgbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imgbox img {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  top: -100px;
+  animation: animateUser 10s linear infinite;
+}
+
+@keyframes animateUser {
+  50% {
+    right: 30px;
+    top: -90px;
+  }
 }
