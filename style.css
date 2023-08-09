@@ -46,6 +46,10 @@ nav {
   width: 40%;
   height: 100%;
 }
+
+.nav-links li:hover a {
+  color: #c62a7b;
+}
 .nav-links li {
   list-style: none;
   margin: 0 10px;
@@ -58,4 +62,21 @@ nav {
   letter-spacing: 2px;
   font-size: 18px;
   transition: all 0.3s ease;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 5%;
+  height: 100%;
+}
+
+.links a {
+  font-size: 20px;
+  color: #3d535f;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  color: #c62a7b;
 }
